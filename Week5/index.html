@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/8bb3957345.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Weather App</title>
+  </head>
+
+  <body>
+    <h1 class="cf">
+      <a href="#" type="click" id="celsius-link"><strong>°C</strong></a>
+      <a href="#" type="click" id="fahrenheit-link"> /°F</a>
+    </h1>
+
+    <form class="city" id="city">
+      <input type="search" placeholder="Enter City" id="enter-city" />
+      <input type="submit" value="Search" id="search-city" />
+      <br />
+      <button type="button" id="current-location">
+        Current Location <i class="fas fa-location-arrow"></i>
+      </button>
+    </form>
+
+    <h1 class="location" id="location">
+      Toronto, <i class="fas fa-map-pin"></i>
+      <br />
+      Ontario
+      <h3>
+        Wednesday, April 22 | Today
+      </h3>
+    </h1>
+
+    <h4>
+      <!-- <i class="fas fa-sun"></i> -->
+      <span id="description">Sunny</span>
+      <h5><span id="min-temp">5</span>/<span id="max-temp">-4</span></h5>
+    </h4>
+
+    <h2 id="current-temp">
+      5
+    </h2>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <i class="fas fa-cloud-sun"></i>
+          <br />
+          Thursday, April 23
+          <br />
+          <small>
+            Mostly Cloudy
+            <br />
+            <strong>5/2</strong>
+          </small>
+        </div>
+        <div class="col">
+          <i class="fas fa-cloud-sun"></i>
+          <br />
+          Friday, April 24
+          <br />
+          <small>
+            Partly Cloudy
+            <br />
+            <strong>12/1 </strong>
+          </small>
+        </div>
+        <div class="col">
+          <i class="fas fa-cloud-sun"></i>
+          <br />
+          Saturday, April 25
+          <br />
+          <small>
+            Mostly Cloudy
+            <br />
+            <strong>10/4</strong>
+          </small>
+        </div>
+        <div class="col">
+          <i class="fas fa-cloud-showers-heavy"></i>
+          <br />
+          Sunday, April 26
+          <br />
+          <small>
+            Showers
+            <br />
+            <strong>8/1</strong>
+          </small>
+        </div>
+        <div class="col">
+          <i class="fas fa-sun"></i>
+          <br />
+          Monday, April 27
+          <br />
+          <small>
+            Mostly Sunny
+            <br />
+            <strong>10/1</strong>
+          </small>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
