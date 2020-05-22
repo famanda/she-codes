@@ -109,3 +109,10 @@ div i {
   color: #757575;
   margin: 0 auto;
 }
+
+footer {
+  text-align: left;
+  position: relative;
+  bottom: 155px;
+  right: 10px;
+}
